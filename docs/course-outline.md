@@ -125,11 +125,12 @@
 
 | ประเภท | ไฟล์ | หัวข้อ |
 | :--- | :--- | :--- |
-| เนื้อหา | [wk7-content1-testing](/wk7/wk7-content1-testing) | Unit Test, Jest, Coverage, TDD เบื้องต้น |
+| เนื้อหา | [wk7-content0-testing-strategy](/wk7/wk7-content0-testing-strategy) | Testing Strategy: Unit / SIT / UAT → DevOps pipeline |
+| เนื้อหา | [wk7-content1-unit-testing](/wk7/wk7-content1-unit-testing) | Unit Test, Jest, Coverage, TDD เบื้องต้น |
 | เนื้อหา | [wk7-content2-security-quality](/wk7/wk7-content2-security-quality) | ESLint, OWASP basics, npm audit, SAST |
-| เนื้อหา | [wk7-content3-api-testing](/wk7/wk7-content3-api-testing) | Supertest, Integration Test, Error cases |
+| เนื้อหา | [wk7-content3-sit-integration](/wk7/wk7-content3-sit-integration) | SIT, Supertest, Integration Test, Approval Gate |
 | เนื้อหา | [wk7-content4-performance-testing](/wk7/wk7-content4-performance-testing) | k6 load test, RPS, P95 latency, threshold |
-| ใบงาน | [wk7-lab1-test-pipeline](/wk7/wk7-lab1-test-pipeline) | Test + quality gate + coverage ≥ 60% ใน CI |
+| ใบงาน | [wk7-lab1-test-pipeline](/wk7/wk7-lab1-test-pipeline) | Unit + SIT + quality gate + coverage ≥ 60% ใน CI |
 
 **Ref Book:** Alice and Bob Learn Application Security — Chapter 1-5
 

@@ -118,13 +118,16 @@
 
 | ประเภท | ไฟล์ | หัวข้อ | DevOps Focus |
 | :--- | :--- | :--- | :--- |
-| เนื้อหา | [wk7-content1-testing](/wk7/wk7-content1-testing) | Unit Test, Integration Test, Jest, Test Coverage | Software Quality |
-| เนื้อหา | [wk7-content2-security-quality](/wk7/wk7-content2-security-quality) | Linting (ESLint), SAST, Application Security Basics | Quality & Security |
-| ใบงาน | [wk7-lab1-test-pipeline](/wk7/wk7-lab1-test-pipeline) | เพิ่ม Test + Quality Gate เข้า CI pipeline | QA Automation |
+| เนื้อหา | [wk7-content0-testing-strategy](/wk7/wk7-content0-testing-strategy) | Testing Strategy: Unit / SIT / UAT → DevOps | QA Strategy |
+| เนื้อหา | [wk7-content1-unit-testing](/wk7/wk7-content1-unit-testing) | Unit Test, Jest, Coverage, TDD เบื้องต้น | Software Quality |
+| เนื้อหา | [wk7-content2-security-quality](/wk7/wk7-content2-security-quality) | ESLint, OWASP basics, npm audit, SAST | Quality & Security |
+| เนื้อหา | [wk7-content3-sit-integration](/wk7/wk7-content3-sit-integration) | SIT, Supertest, Integration Test, Approval Gate | System Integration |
+| เนื้อหา | [wk7-content4-performance-testing](/wk7/wk7-content4-performance-testing) | k6 load test, RPS, P95 latency, threshold | Performance |
+| ใบงาน | [wk7-lab1-test-pipeline](/wk7/wk7-lab1-test-pipeline) | Unit + SIT + quality gate + coverage ≥ 60% ใน CI | QA Automation |
 
-**Learning Outcomes:** เขียน Unit Test ด้วย Jest ได้ / เพิ่ม quality gate ใน CI pipeline ได้ / อธิบาย OWASP threat พื้นฐานได้
+**Learning Outcomes:** อธิบาย Unit/SIT/UAT ใน DevOps ได้ / เขียน Unit Test ด้วย Jest ได้ / ทำ SIT ด้วย Supertest ได้ / เพิ่ม quality gate ใน CI ได้
 
-**Ref Book:** Alice and Bob Learn Application Security — Chapter 1-4
+**Ref Book:** Alice and Bob Learn Application Security — Chapter 1-5
 
 ---
 

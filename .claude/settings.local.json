@@ -3,7 +3,10 @@
     "allow": [
       "Bash(BASE=\"/c/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development\")",
       "Bash(cp -r \"$BASE/project/task-tracker\" \"$BASE/starter\")",
-      "Bash(\"/c/Users/dol_7/Desktop/30901-2008 DevOps:*)"
+      "Bash(\"/c/Users/dol_7/Desktop/30901-2008 DevOps:*)",
+      "Bash(BASE=\"/c/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk7\")",
+      "Bash(mv \"$BASE/wk7-content1-testing.md\" \"$BASE/wk7-content1-unit-testing.md\")",
+      "Bash(mv \"$BASE/wk7-content3-api-testing.md\" \"$BASE/wk7-content3-sit-integration.md\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\dol_7\\Desktop\\30901-2008 DevOps Style Software Development\\project"

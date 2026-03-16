@@ -118,9 +118,10 @@ export default defineConfig({
         text: 'Module 7 — Testing & Quality',
         collapsed: true,
         items: [
-          { text: '📖 Testing with Jest', link: '/wk7/wk7-content1-testing' },
+          { text: '📖 Testing Strategy (Unit/SIT/UAT)', link: '/wk7/wk7-content0-testing-strategy' },
+          { text: '📖 Unit Testing with Jest', link: '/wk7/wk7-content1-unit-testing' },
           { text: '📖 Security & Code Quality', link: '/wk7/wk7-content2-security-quality' },
-          { text: '📖 API Testing', link: '/wk7/wk7-content3-api-testing' },
+          { text: '📖 SIT / Integration Testing', link: '/wk7/wk7-content3-sit-integration' },
           { text: '📖 Performance Testing', link: '/wk7/wk7-content4-performance-testing' },
           { text: '🧪 Lab: Test in Pipeline', link: '/wk7/wk7-lab1-test-pipeline' },
         ],
