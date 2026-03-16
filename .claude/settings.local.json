@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(BASE=\"/c/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development\")",
+      "Bash(cp -r \"$BASE/project/task-tracker\" \"$BASE/starter\")",
+      "Bash(\"/c/Users/dol_7/Desktop/30901-2008 DevOps:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\dol_7\\Desktop\\30901-2008 DevOps Style Software Development\\project"
+    ]
+  }
+}

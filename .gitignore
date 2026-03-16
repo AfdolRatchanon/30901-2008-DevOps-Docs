@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+starter/node_modules/
+
+# VitePress build output
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Ref Books (PDF ขนาดใหญ่ — เก็บแยกถ้าต้องการ)
+# Ref Book/

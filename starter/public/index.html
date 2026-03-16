@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+    h1 { color: #333; }
+    #task-form { display: flex; gap: 8px; margin-bottom: 24px; }
+    #task-input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 8px 16px; background: #0070f3; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    #task-list { list-style: none; padding: 0; }
+    .task-item { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #eee; border-radius: 4px; margin-bottom: 8px; }
+    .task-item.done span { text-decoration: line-through; color: #999; }
+    .delete-btn { margin-left: auto; background: #ff4444; }
+  </style>
+</head>
+<body>
+  <h1>📋 Task Tracker</h1>
+
+  <form id="task-form">
+    <input id="task-input" type="text" placeholder="เพิ่ม task ใหม่..." required />
+    <button type="submit">เพิ่ม</button>
+  </form>
+
+  <ul id="task-list"></ul>
+
+  <footer style="margin-top:40px; border-top:1px solid #eee; padding-top:12px; color:#aaa; font-size:12px;">
+    จัดทำโดย: ชื่อ-นามสกุล · รหัสนักเรียน
+  </footer>
+
+  <script>
+    const API = '/tasks'
+
+    async function loadTasks() {
+      const res = await fetch(API)
+      const tasks = await res.json()
+      const list = document.getElementById('task-list')
+      list.innerHTML = tasks.map(t => `
+        <li class="task-item ${t.done ? 'done' : ''}" data-id="${t.id}">
+          <input type="checkbox" ${t.done ? 'checked' : ''} onchange="toggleTask('${t.id}', this.checked)" />
+          <span>${t.title}</span>
+          <button class="delete-btn" onclick="deleteTask('${t.id}')">ลบ</button>
+        </li>
+      `).join('')
+    }
+
+    document.getElementById('task-form').addEventListener('submit', async (e) => {
+      e.preventDefault()
+      const input = document.getElementById('task-input')
+      await fetch(API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: input.value }),
+      })
+      input.value = ''
+      loadTasks()
+    })
+
+    async function toggleTask(id, done) {
+      await fetch(`${API}/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ done }),
+      })
+      loadTasks()
+    }
+
+    async function deleteTask(id) {
+      await fetch(`${API}/${id}`, { method: 'DELETE' })
+      loadTasks()
+    }
+
+    loadTasks()
+  </script>
+</body>
+</html>

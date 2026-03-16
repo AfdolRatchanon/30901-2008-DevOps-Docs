@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/.vitepress\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk1\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk2\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk3\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk4\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk5\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk6\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk7\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk8\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/docs/wk9\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/project/task-tracker/frontend\")",
+      "Bash(mkdir -p \"c:/Users/dol_7/Desktop/30901-2008 DevOps Style Software Development/project/task-tracker/backend\")",
+      "Read(//c/Users/dol_7/.claude/projects/c--Users-dol-7-Desktop-30901-2008-DevOps-Style-Software-Development/memory/**)",
+      "Bash(ls \"c:\\\\Users\\\\dol_7\\\\Desktop\\\\30901-2008 DevOps Style Software Development\\\\project\"\" 2>/dev/null || echo \"not found \")"
+    ]
+  }
+}
