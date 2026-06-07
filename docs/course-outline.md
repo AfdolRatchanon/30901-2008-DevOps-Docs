@@ -3,7 +3,6 @@
 **รายวิชา:** 30901-2008 การพัฒนาซอฟต์แวร์รูปแบบเดฟออฟส์ (DevOps Style Software Development)
 **หน่วยกิต:** 1-4-3 | **มาตรฐาน:** —
 
----
 
 ## 🎯 จุดประสงค์รายวิชา
 
@@ -13,7 +12,6 @@
 3. **ด้านคุณลักษณะ (Attitude):** มีความละเอียดรอบคอบ รับผิดชอบ สื่อสารในทีมได้ มีการคิดเชิงนวัตกรรมและทำงานเป็นทีม
 :::
 
----
 
 ## 🏗️ โปรเจกต์หลักประจำวิชา
 
@@ -36,7 +34,6 @@
 | **M9 Final** | Full pipeline + presentation |
 :::
 
----
 
 ## 📅 ตารางเนื้อหา 9 โมดูล (18 สัปดาห์)
 
@@ -49,11 +46,10 @@
 | เนื้อหา | [wk1-content3-value-stream](/wk1/wk1-content3-value-stream) | Value Stream — หา waste ใน delivery process |
 | เนื้อหา | [wk1-content4-agile-devops](/wk1/wk1-content4-agile-devops) | Agile + DevOps, Sprint, GitHub Projects |
 | เนื้อหา | [wk1-content5-dora-metrics](/wk1/wk1-content5-dora-metrics) | DORA Metrics — 4 ตัวชี้วัดทีม DevOps |
-| ใบงาน | [wk1-lab1-env-setup](/wk1/wk1-lab1-env-setup) | ติดตั้ง WSL2, VS Code, Git, Node.js |
+| ใบงาน | [wk1-lab1-env-setup](/wk1/wk1-lab1-env-setup) | ติดตั้ง Git (Git Bash), VS Code, Node.js, Docker |
 
 **Ref Book:** The DevOps Handbook — Part I
 
----
 
 ### Module 2 — Linux & Shell Script <Badge type="tip" text="สัปดาห์ 3–4" />
 
@@ -68,7 +64,6 @@
 
 **Ref Book:** The Linux Command Line — Part I-II, Chapter 16, 19-20
 
----
 
 ### Module 3 — Git & GitHub <Badge type="tip" text="สัปดาห์ 5–6" />
 
@@ -81,7 +76,6 @@
 
 **Ref Book:** Pro Git — Chapter 1-3, 5, 7
 
----
 
 ### Module 4 — Docker & Cloud <Badge type="tip" text="สัปดาห์ 7–8" />
 
@@ -96,7 +90,6 @@
 
 **Ref Book:** Docker Deep Dive 2025 — Chapter 1-10, 16
 
----
 
 ### Module 5 — Midterm <Badge type="danger" text="สัปดาห์ 9 (สอบกลางภาค)" />
 
@@ -104,7 +97,6 @@
 | :--- | :--- | :--- |
 | Project | [wk5-midterm-exam](/wk5/wk5-midterm-exam) | ส่ง Task Tracker + Dockerized + Git history |
 
----
 
 ### Module 6 — CI/CD with GitHub Actions <Badge type="tip" text="สัปดาห์ 10–12" />
 
@@ -119,7 +111,6 @@
 
 **Ref Book:** Learning GitHub Actions — Chapter 1-9
 
----
 
 ### Module 7 — Testing & Quality <Badge type="tip" text="สัปดาห์ 13–14" />
 
@@ -134,7 +125,6 @@
 
 **Ref Book:** Alice and Bob Learn Application Security — Chapter 1-5
 
----
 
 ### Module 8 — Deploy & Monitor <Badge type="tip" text="สัปดาห์ 15–16" />
 
@@ -151,7 +141,6 @@
 
 **Ref Book:** Beyond the 12-Factor App · Terraform Up & Running Ch.1-2
 
----
 
 ### Module 9 — Final Project <Badge type="danger" text="สัปดาห์ 17–18 (สอบปลายภาค)" />
 
@@ -160,7 +149,6 @@
 | เนื้อหา | [wk9-content1-devops-next](/wk9/wk9-content1-devops-next) | Kubernetes preview, SRE vs DevOps, Certifications |
 | Project | [wk9-final-exam](/wk9/wk9-final-exam) | Full pipeline + Live URL + Presentation |
 
----
 
 ## 📊 สัดส่วนคะแนน
 
@@ -171,13 +159,12 @@
 | สอบปลายภาค (wk9 Final Project + Presentation) | 40 |
 | **รวม** | **100** |
 
----
 
 ## 🛠️ Tech Stack ที่ใช้ในวิชา
 
 ::: code-group
 ```bash [Foundation]
-Linux CLI (WSL2 on Windows) + Git Bash fallback
+Linux CLI (ผ่าน Git Bash บน Windows)
 Bash Shell Script
 Git + GitHub (Branch Protection + PR workflow)
 ```
@@ -206,7 +193,6 @@ Terraform (concept + read only)
 ```
 :::
 
----
 
 ## 📚 Reference Books
 

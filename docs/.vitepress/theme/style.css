@@ -1,0 +1,21 @@
+/* เพิ่มขนาดและการจัดวาง Mermaid Diagram ให้อ่านง่ายขึ้น */
+.vp-doc .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.vp-doc .mermaid svg {
+  max-width: 100%;
+  height: auto !important; /* บังคับให้ขยายอัตโนมัติตามเนื้อหา */
+  min-height: 150px;
+}
+
+/* เพิ่มขนาดฟอนต์ให้ Diagram อ่านง่าย ไม่เล็กเกินไป */
+.mermaid text {
+  font-size: 16px !important;
+  font-family: var(--vp-font-family-base) !important;
+}
+
+/* เพิ่ม Padding ให้ตัวกล่องข้อความใน Mermaid */

@@ -5,13 +5,11 @@
 
 > 🤖 **AI-Generated Textbook:** เอกสารนี้เป็น "แม่แบบ (Blueprint)" สำหรับให้ AI สร้างเนื้อหาบทเรียนลงใน VitePress เพื่อใช้แทนหนังสือเรียนแบบดั้งเดิม
 
----
 
 ## 📖 โปรเจกต์นี้คืออะไร?
 
 เอกสารรายวิชาเว็บแอปพลิเคชันที่สร้างด้วย VitePress บูรณาการกระบวนการสอน MIAP + PjBL + CLIL + AI เพื่อตอบสนองมาตรฐาน TPQI รหัส 10302 (นักพัฒนาระบบ ระดับ 3)
 
----
 
 ## ✨ จุดเด่น (Key Features)
 
@@ -23,7 +21,6 @@
 - **Student Identity in Lab** — task แรกของทุก Lab ให้นักเรียนใส่ชื่อตนเองในโค้ด
 - **Code Review Prep** — คำถาม 3-4 ข้อท้ายบท เน้น "ทำไม" ไม่ใช่ท่อง
 
----
 
 ## ⚙️ คำชี้แจงสำหรับ AI (AI Generator Instructions)
 
@@ -36,7 +33,6 @@
 5. **TypeScript Just-in-Time:** สอน TypeScript ตามระดับที่ระบุใน Course Outline เท่านั้น
 6. **Student Identity:** ใส่ task แรกของทุก Lab เป็นการพิมพ์ชื่อนักเรียน
 
----
 
 ## 📁 Naming Convention
 
@@ -48,44 +44,39 @@
 
 (X = โมดูลที่ 1-9, Y = ลำดับเนื้อหาในโมดูลนั้น)
 
----
 
 ## 🏅 Vocational Gold Standard — Layout Blueprint
 
-ทุกหน้าต้องมีโครงสร้าง MIAP ครบ 4 ขั้น:
+ทุกหน้าต้องสอดแทรก **MIAP + CLIL + PjBL** ไว้ในเนื้อหาอย่างเป็นธรรมชาติ
+**ห้ามใส่ label ว่า "M: Motivation" หรือ "I: Information"** — นักเรียนต้องไม่รู้ตัวว่ากำลังอยู่ขั้นไหน
 
 ```markdown
-# ชื่อหัวข้อ <Badge type="info" text="TPQI 10302" />
+# ชื่อหัวข้อ <Badge type="info" text="30901-2008" />
 
-## 🎯 M: Motivation
-::: danger 🚨 ปัญหาจากโปรเจกต์ (PjBL Hook)
-[ปัญหาจาก "ระบบเบิก-จ่ายอุปกรณ์ไอที" ที่ทำให้นักเรียนอยากเรียนหัวข้อนี้]
+<!-- MIAP-M: เริ่มด้วย hook ที่ทำให้อยากรู้ ไม่ต้องใส่หัวข้อ "Motivation" -->
+::: danger 🚨 [ปัญหาจาก Task Tracker ที่ทำให้นักเรียนอยากแก้]
+[อธิบายสถานการณ์จริงที่น่าปวดหัว และ hint ว่าเรื่องนี้จะแก้ได้]
 :::
-> 💡 **เปรียบเทียบ:** [อุปมาเชื่อมกับชีวิตประจำวัน]
+> 💡 **เปรียบเทียบ:** [อุปมาเชื่อมกับชีวิตประจำวัน ทำให้จำได้]
 
----
 
-## 📖 I: Information
-[เนื้อหา — Code-First, เรียงง่ายไปยาก, ดูรูปแบบย่อยด้านล่าง]
+<!-- MIAP-I: เนื้อหาหลัก — Code-First, เรียงง่ายไปยาก ไม่ต้องใส่หัวข้อ "Information" -->
+## ขั้นตอนที่ 1 — [ชื่อขั้นตอน]
+[โค้ดก่อนเสมอ อธิบายแทรกในโค้ด ไม่ใช่ก่อนโค้ด]
 
----
 
-## 🛠️ A: Application
-
-### 🤖 AI Prompt Guide
+<!-- MIAP-A: ส่วนฝึกปฏิบัติ — AI Prompt + Lab ไม่ต้องใส่หัวข้อ "Application" -->
+## 🤖 AI Prompt Guide
 ::: info 💬 ถาม AI
-"[Prompt ภาษาไทยสำหรับขอความช่วยเหลือจาก ChatGPT/Claude]"
+"[Prompt สำหรับขอความช่วยเหลือจาก Claude/ChatGPT]"
 :::
 
-### 📝 PjBL Lab
-[ใบงาน — เริ่มด้วย Student Identity, เรียงง่ายไปยาก, ดูรูปแบบย่อยด้านล่าง]
 
----
-
-## ✅ P: Progress
+<!-- MIAP-P: วัดผล — Code Review + Rubric + CLIL ไม่ต้องใส่หัวข้อ "Progress" -->
+## ✅ Progress
 
 ### 🗣️ Code Review
-::: details ❓ คำถาม (3-4 ข้อ เน้น "ทำไม")
+::: details ❓ [คำถาม 3-4 ข้อ เน้น "ทำไม"]
 **แนวคำตอบ:** ...
 :::
 
@@ -93,14 +84,15 @@
 | เกณฑ์ | ดีมาก (3-4) | พอใช้ (1-2) | ปรับปรุง (0) |
 | :--- | :--- | :--- | :--- |
 
----
 
 ### 📚 CLIL Vocabulary
-| Technical Term | Meaning in Context |
+<!-- CLIL: ท้ายบทเสมอ รวม technical terms ที่ใช้ในหน้านี้ -->
+| Technical Term | ความหมายในบริบทนี้ |
 | :--- | :--- |
 ```
 
----
+> **หลักการ:** MIAP เป็น "กระดูก" ที่ซ่อนอยู่ใต้เนื้อหา ผู้อ่านรู้สึกว่าเนื้อหาไหลลื่น สนุก และเข้าใจง่าย โดยไม่รู้ตัวว่ากำลังถูกพา Motivate → เรียนรู้ → ฝึก → วัดผล
+
 
 ## 🎨 Information Section Patterns
 
@@ -126,14 +118,12 @@ Done. Now run:
   cd my-project && npm install
 \`\`\`
 
----
 
 ### ขั้นตอนที่ 2 — ชื่อขั้นตอน
 ```
 
 **กฎ:** ทุกคำสั่ง bash ต้องมี block แสดง expected output — นักเรียนรู้ว่า "สำเร็จ" หน้าตาเป็นอย่างไร
 
----
 
 ### รูปแบบ 2: โค้ดอธิบายทีละบรรทัด (สำหรับไฟล์สำคัญ)
 
@@ -159,7 +149,6 @@ createRoot(document.getElementById('root')!).render(
 
 **กฎ:** ใช้ `// [1] [2]...` สำหรับบรรทัดสำคัญ ตามด้วย "สรุปการทำงาน:" เสมอ
 
----
 
 ### รูปแบบ 3: Code Tabs ✅/❌/💡 (สำหรับสอน TypeScript)
 
@@ -183,7 +172,6 @@ const equipmentName = 'MacBook Pro'  // รู้ว่าเป็น string
 
 **กฎ:** Tab ✅ ❌ 💡 ใช้กับ TypeScript เสมอ และต้องมีทั้ง 3 tab ในหัวข้อ TypeScript ทุกหัวข้อ
 
----
 
 ### รูปแบบ 4: Progressive Versions (เวอร์ชันง่ายไปยาก ภายในบทเดียว)
 
@@ -204,7 +192,6 @@ export function EquipmentCard({ name, status }: Props) {
 
 บันทึกไฟล์ → ดู Browser → ต้องเห็นข้อมูลแสดงออกมา ✅
 
----
 
 ### [Component name] เวอร์ชัน 2 — เพิ่ม Status Badge
 
@@ -225,7 +212,6 @@ export function EquipmentCard({ name, status }: Props) {
 
 **กฎ:** ทุกเวอร์ชันต้องรันได้จริง — อย่าให้นักเรียนรอถึงเวอร์ชันสุดท้ายแล้วค่อยเห็นผล
 
----
 
 ### รูปแบบ 5: โครงสร้างโฟลเดอร์
 
@@ -246,7 +232,24 @@ my-project/
 :::
 ```
 
----
+
+### รูปแบบ 6: การใช้ Diagram อธิบายระบบ (Mermaid)
+
+ใช้ Mermaid ในการสร้าง Diagram อธิบายสถาปัตยกรรม (Architecture) หรือ Flow การทำงาน เพื่อให้นักเรียนเห็นภาพรวมก่อนลงมือเขียนโค้ด
+
+```markdown
+### 🗺️ Architecture Overview
+
+\`\`\`mermaid
+graph TD
+    A[User Browser] -->|HTTP Request| B(React Frontend)
+    B -->|API Call| C{Node.js API}
+    C -->|Query| D[(PostgreSQL)]
+\`\`\`
+```
+
+**กฎ:** ควรใช้ Mermaid สำหรับ Workflow, Git branching หรือ System Architecture เพราะแก้ไขได้ง่ายผ่าน text และรองรับโดย VitePress/GitHub โดยตรง
+
 
 ## 📝 PjBL Lab Pattern
 
@@ -316,7 +319,6 @@ git push
 - มี **Bonus Task** สำหรับนักเรียนที่ทำเสร็จก่อน
 - Task ทดสอบ TypeScript Error ต้องมีในทุก Lab
 
----
 
 ## 🗣️ Code Review Pattern
 
@@ -334,7 +336,6 @@ git push
 - แนวคำตอบต้องอธิบาย "ทำไม" ไม่ใช่แค่ "อะไร"
 - คำถามต้องเชื่อมกับโค้ดที่นักเรียนเพิ่งเขียน ไม่ใช่ทฤษฎีลอย ๆ
 
----
 
 ## 🚫 Anti-Patterns (สิ่งที่ต้องหลีกเลี่ยง)
 
@@ -350,3 +351,4 @@ git push
 | ตัวแปรภาษาไทย (`const ชื่อ = ...`) | CLIL: ตัวแปรต้องเป็นอังกฤษเสมอ |
 | Terminal command ไม่มี expected output | แสดง output ทุกครั้งเพื่อให้นักเรียนตรวจสอบ |
 | โค้ดไม่มีคอมเมนต์ | บรรทัดสำคัญต้องมีคอมเมนต์ภาษาไทยอธิบาย |
+| การใช้ `---` เพื่อคั่นเนื้อหา | ไม่ต้องใช้เส้นคั่น ปล่อยให้เว้นบรรทัดหรือหัวข้อแบ่งสัดส่วนเนื้อหาแทน |

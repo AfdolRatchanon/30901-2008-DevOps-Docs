@@ -3,7 +3,6 @@
 **รายวิชา:** 30901-2008 การพัฒนาซอฟต์แวร์รูปแบบเดฟออฟส์ (DevOps Style Software Development)
 **หน่วยกิต:** 1-4-3 | **มาตรฐาน:** —
 
----
 
 ## 🎯 จุดประสงค์รายวิชา
 
@@ -13,7 +12,6 @@
 3. **ด้านคุณลักษณะ (Attitude):** มีความละเอียดรอบคอบ รับผิดชอบ สื่อสารในทีมได้ มีการคิดเชิงนวัตกรรมและทำงานเป็นทีม
 :::
 
----
 
 ## 🏗️ โปรเจกต์หลักประจำวิชา
 
@@ -27,7 +25,6 @@
 คือสิ่งที่แยก DevOps Engineer ออกจาก Developer ทั่วไป
 :::
 
----
 
 ## 📅 ตารางเนื้อหา 9 โมดูล (18 สัปดาห์)
 
@@ -42,7 +39,6 @@
 
 **Ref Book:** The DevOps Handbook — Part I: The Three Ways
 
----
 
 ### Module 2 — Linux & Shell Script <Badge type="tip" text="สัปดาห์ 3–4" />
 
@@ -56,7 +52,6 @@
 
 **Ref Book:** The Linux Command Line — Part I-II
 
----
 
 ### Module 3 — Git & GitHub <Badge type="tip" text="สัปดาห์ 5–6" />
 
@@ -70,7 +65,6 @@
 
 **Ref Book:** Pro Git — Chapter 1-3, 5
 
----
 
 ### Module 4 — Docker & Containerization <Badge type="tip" text="สัปดาห์ 7–8" />
 
@@ -84,7 +78,6 @@
 
 **Ref Book:** Docker Deep Dive 2025 — Chapter 1-8
 
----
 
 ### Module 5 — Midterm Project Checkpoint <Badge type="danger" text="สัปดาห์ 9 (สอบกลางภาค)" />
 
@@ -98,7 +91,6 @@
 - Git มี commit history ที่มีความหมาย (ไม่ใช่ "first commit" อย่างเดียว)
 - มี README.md อธิบายวิธีรันโปรเจกต์
 
----
 
 ### Module 6 — CI/CD with GitHub Actions <Badge type="tip" text="สัปดาห์ 10–12" />
 
@@ -112,7 +104,6 @@
 
 **Ref Book:** Learning GitHub Actions — Chapter 1-7
 
----
 
 ### Module 7 — Testing & Quality Assurance <Badge type="tip" text="สัปดาห์ 13–14" />
 
@@ -129,7 +120,6 @@
 
 **Ref Book:** Alice and Bob Learn Application Security — Chapter 1-5
 
----
 
 ### Module 8 — Deployment & Monitoring <Badge type="tip" text="สัปดาห์ 15–16" />
 
@@ -143,7 +133,6 @@
 
 **Ref Book:** Beyond the 12-Factor App — All chapters
 
----
 
 ### Module 9 — Final Project <Badge type="danger" text="สัปดาห์ 17–18 (สอบปลายภาค)" />
 
@@ -158,7 +147,6 @@
 - มี monitoring / logging พื้นฐาน
 - นำเสนอ pipeline ต่อหน้าชั้นเรียนและตอบ Code Review ได้
 
----
 
 ## 📊 สัดส่วนคะแนน
 
@@ -169,7 +157,6 @@
 | สอบปลายภาค (wk9 Final Project + Presentation) | 40 |
 | **รวม** | **100** |
 
----
 
 ## 🛠️ Tech Stack ที่ใช้ในวิชา
 
@@ -198,7 +185,6 @@ Render / Railway (Cloud Deployment)
 ```
 :::
 
----
 
 ## 📚 Reference Books
 

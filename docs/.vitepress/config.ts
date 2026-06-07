@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: '30901-2008 DevOps',
   description: 'การพัฒนาซอฟต์แวร์รูปแบบเดฟออฟส์ (DevOps Style Software Development)',
   lang: 'th-TH',
@@ -33,6 +34,7 @@ export default defineConfig({
         text: '📋 ภาพรวมรายวิชา',
         items: [
           { text: 'Course Outline', link: '/course-outline' },
+          { text: '📊 T-Score & การประเมิน', link: '/t-score' },
         ],
       },
 
@@ -170,4 +172,15 @@ export default defineConfig({
   markdown: {
     lineNumbers: true,
   },
-})
+
+  mermaid: {
+    theme: 'default',
+    securityLevel: 'loose',
+    startOnLoad: false,
+    flowchart: {
+      htmlLabels: true,
+      curve: 'basis',
+      padding: 20
+    }
+  }
+}))

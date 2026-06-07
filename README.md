@@ -5,7 +5,6 @@
 
 🌐 **อ่านออนไลน์:** https://AfdolRatchanon.github.io/30901-2008-DevOps-Docs/
 
----
 
 ## โครงสร้างโปรเจกต์
 
